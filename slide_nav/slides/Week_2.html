@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='../assets/reveal.js/css/reveal.css' rel='stylesheet' type='text/css'>
+    <link href='../assets/css/slide_types.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class='reveal'>
+      <div class='slides'>
+        <section class='main-section'>
+          <section>
+            <div class='header'>Representing the real world</div>
+            <div class='content horizontal'>
+              <div>
+                <pre>Arrays for lists</pre>
+              </div>
+              <div>
+                <pre>Strings for text</pre>
+              </div>
+              <div>
+                <pre>Integers and Floats for numbers</pre>
+              </div>
+              <div>
+                <pre>Hashes for more complicated data</pre>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class='header'>Representing the real world: Teacher Notes</div>
+            <div class='content'>
+              <pre>In order for us to teach the computer to make decisions, we have to teach it about the real world</pre>
+              <pre>We use different data types to represent different types of real world information</pre>
+              <pre>Arrays were good for representing lists</pre>
+              <pre>But what if we want to represent things that are more complex?</pre>
+            </div>
+          </section>
+        </section>
+        <section class='main-section'>
+          <section>
+            <div class='header'>Exercise: Represent your kitchen as a hash</div>
+            <div class='content'>
+              <pre>Dummy data until fixing converter</pre>
+            </div>
+          </section>
+          <section>
+            <div class='header'>Exercise: Represent your kitchen as a hash: Teacher Notes</div>
+            <div class='content'>
+              <pre>Imagine you're making a PBJ</pre>
+              <pre>If we want to make a sandwich, the first step is to go through our cabinets and gather the ingredients</pre>
+            </div>
+          </section>
+        </section>
+        <section class='main-section'>
+          <section>
+            <div class='header'>Hashes</div>
+            <div class='content horizontal'>
+              <div>
+                <pre>Key / Value pair data type</pre>
+              </div>
+              <div>
+                <pre>Hash is created using curly braces and the "hash rocket": <code>{ 'key' => 'value' }</code></pre>
+              </div>
+              <div>
+                <pre>Keys and values can be any type we want</pre>
+              </div>
+              <div>
+                <pre>numbers, strings, arrays, other hashes</pre>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class='header'>Hashes: Teacher Notes</div>
+            <div class='content'>
+              <pre>Hashes are a datatype that allow us to group our data into names</pre>
+              <pre>If we want to get data out of an array, we have to know what index the data is in</pre>
+              <pre>array = ['data', 'data', 'data we want', 'more data']</pre>
+              <pre>Hashes allow us to name the data so we can access it directly</pre>
+              <pre>code</pre>
+              <pre>hash = { 'key' => 'value' }</pre>
+              <pre>Hash rocket</pre>
+              <pre>hash = { 'name1' => 'data', 'name2' => 'more data', 'name3' => 'data we want'}</pre>
+              <pre>hash['name3']</pre>
+              <pre>Used the same way as arrays using square brackets, but instead of index, we use the key</pre>
+              <pre>We can only get the values if we know the keys</pre>
+            </div>
+          </section>
+        </section>
+        <section class='main-section'>
+          <section>
+            <div class='header'>Exercise: Represent your kitchen as a hash</div>
+            <div class='content horizontal'>
+              <div>
+                <pre>Create a hash that stores the contents of your kitchen</pre>
+              </div>
+              <div>
+                <pre>eg.  Your cabinet has peanut butter and bread</pre>
+              </div>
+              <div>
+                <pre>And your fridge has jelly</pre>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class='header'>Exercise: Represent your kitchen as a hash: Teacher Notes</div>
+            <div class='content'>
+              <pre>what parts of a kitchen do we have?</pre>
+              <pre>cabinets</pre>
+              <pre>drawers</pre>
+              <pre>fridge</pre>
+              <pre>give a list of items that the student can sort into the respective places</pre>
+              <pre>Exercises to come:</pre>
+              <pre>1) One item per location in the kitchen</pre>
+              <pre>2) Multiple items (array) as the value</pre>
+              <pre>2 ways:</pre>
+              <pre>Have them do all the sorting up front in the file side of repl.it</pre>
+              <pre>then give them new items and have them edit the hash to in the interactive side</pre>
+            </div>
+          </section>
+        </section>
+        <section class='main-section'>
+          <section>
+            <div class='header'>Exercise: Looping over hashes part 1</div>
+            <div class='content horizontal'>
+              <div>
+                <pre>To get the keys: <code>{'key1' => 'value1', 'key2' => 'value2'}.keys </code></pre>
+              </div>
+              <div>
+                <pre>Write a loop to go through the kitchen and check if we have all the ingredients to make a PBJ</pre>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class='header'>Exercise: Looping over hashes part 1: Teacher Notes</div>
+            <div class='content'>
+              <pre>Talk through two options</pre>
+              <pre>1) compare the items in the cabinet</pre>
+              <pre>2) convert the ingredients into an array and use the code from last week</pre>
+              <pre>Write a loop that goes through all the parts of the kitchen and determines if we have the necessary ingredients to make a PBJ sandwich</pre>
+              <pre>same as last week but with hashes</pre>
+              <pre>use the framework</pre>
+              <pre>Exercise, write a loop that goes through all the locations in your kitchen and pulls all the ingredients out and puts them on the counter (a variable)</pre>
+              <pre>Then show them an easier way to do it with the "values" method</pre>
+            </div>
+          </section>
+        </section>
+        <section class='main-section'>
+          <section>
+            <div class='header'>Exercise: Looping over hashes part 2</div>
+            <div class='content horizontal'>
+              <div>
+                <pre>Now let's store multiple items in our cabinets and kitchen</pre>
+              </div>
+              <div>
+                <pre>Change your function to work with multiple items in the cabinets</pre>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class='main-section'>
+          <section>
+            <div class='header'>Interacting with your kitchen</div>
+            <div class='content'>
+              <pre>Let's plan out all the functions necessary to interact with your kitchen</pre>
+            </div>
+          </section>
+          <section>
+            <div class='header'>Interacting with your kitchen: Teacher Notes</div>
+            <div class='content'>
+              <pre>Use the programming framework to do this</pre>
+              <pre>1) taking things out of a cabinet and put it on the counter</pre>
+              <pre>2) Put things back in</pre>
+            </div>
+          </section>
+        </section>
+        <section class='main-section'>
+          <section>
+            <div class='header'>"State" of the world</div>
+            <div class='content'>
+              <pre>The current environment that we are living and working in in the computer</pre>
+            </div>
+          </section>
+          <section>
+            <div class='header'>"State" of the world: Teacher Notes</div>
+            <div class='content'>
+              <pre>State is the current world that the computer sees</pre>
+              <pre>Our starting state for our kitchen is empty, then we fill up the cabinets with food</pre>
+              <pre>When we remove an item of food from the cabinets and put it on the counter, we are changing the state of the system</pre>
+              <pre>Anyone heard "just turn it off and on again"?</pre>
+              <pre>that happens because the state of our system has gotten messed up, and a restart resets the state back to the basics</pre>
+            </div>
+          </section>
+        </section>
+        
+      </div>
+    </div>
+  </body>
+  <script src='../assets/reveal.js/lib/js/head.min.js'></script>
+  <script src='../assets/reveal.js/js/reveal.js'></script>
+</html>
+<script>
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+  
+    transition: 'slide', // none/fade/slide/convex/concave/zoom
+  
+    // More info https://github.com/hakimel/reveal.js#dependencies
+    dependencies: [
+      { src: '../assets/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+      { src: '../assets/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: '../assets/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+      { src: '../assets/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+      { src: '../assets/reveal.js/plugin/zoom-js/zoom.js', async: true },
+      { src: '../assets/reveal.js/plugin/notes/notes.js', async: true }
+      ]
+    });
+</script>
